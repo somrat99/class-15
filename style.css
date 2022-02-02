@@ -1,0 +1,391 @@
+/* defult-css */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* full-section css */
+.main-section {
+    background-image: linear-gradient(135deg, #FFCF71 10%, #2376DD 100%);
+    padding-bottom: 50px;
+}
+
+/* value-section */
+.value-section {
+    padding-top: 24px;
+}
+
+.heading {}
+
+.heading h2 {
+    font-family: 'Source Serif 4', sans-serif;
+    text-align: center;
+}
+
+
+/* clock-1*/
+
+.clock-inner {
+    width: 350px;
+    height: 350px;
+    background-color: #fff;
+    background-image: url(./img/clock-1.jpg);
+    background-size: 130% 130%;
+    background-position: center center;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock-inner::before {
+    content: '';
+
+    width: 13px;
+    height: 13px;
+    background-color: black;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.clock-inner .s {
+    width: 0px;
+    height: 258px;
+
+    display: flex;
+    justify-content: center;
+    transform: rotate(0deg);
+
+}
+
+.clock-inner .s::before {
+    content: '';
+    width: 3px;
+    height: 145px;
+    background-color: red;
+    position: absolute;
+    border-radius: 5px;
+}
+
+
+
+
+.clock-inner .m {
+    width: 0px;
+    height: 230px;
+
+    display: flex;
+    justify-content: center;
+    transform: rotate(45deg);
+
+}
+
+.clock-inner .m::before {
+    content: '';
+    width: 6px;
+    height: 132px;
+    background-color: #282828;
+    position: absolute;
+    border-radius: 5px;
+}
+
+.clock-inner .h {
+    width: 0px;
+    height: 180px;
+
+    display: flex;
+    justify-content: center;
+    transform: rotate(90deg);
+
+}
+
+.clock-inner .h::before {
+    content: '';
+    width: 6.5px;
+    height: 106px;
+    background-color: #282828;
+    position: absolute;
+    border-radius: 5px;
+}
+
+
+/* calculator */
+@font-face {
+    font-family: calculator;
+    src: url(./digital-7/digital-7.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* clock-2*/
+
+.clock-inner2 {
+    width: 350px;
+    height: 350px;
+    background-color: #fff;
+    background-image: url(./img/clock-2.jpg);
+    background-size: cover;
+    background-position: center center; 
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid #c1994d;
+}
+
+.clock-inner2::before{
+    content:'' ;
+    background-color: #e5bc61;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+} 
+.clock-inner2 .minute {
+    width: 0px;
+    height: 324px;
+
+    display: flex;
+    justify-content: center;
+    transform: rotate(180deg); 
+
+}
+
+.clock-inner2 .minute::before {
+    content: '';
+    width: 50px;
+    height: 176px;
+    background-image: url(./img/clock-m.png); 
+    position: absolute;
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+.clock-inner2 .secc {
+    width: 0px;
+    height: 274px;
+
+    display: flex;
+    justify-content: center;
+    transform: rotate(0deg);
+
+}
+
+.clock-inner2 .secc::before {
+    content: '';
+    width: 20px;
+    height: 145px;
+    background-image: url(./img/clock-s.png); 
+    position: absolute; 
+    background-size: 21px;
+    background-repeat: no-repeat;
+}
+
+.clock-inner2 .ghonta {
+    width: 0px;
+    height: 203px;
+    display: flex;
+    justify-content: center;
+    transform: rotate(290deg);
+}
+
+.clock-inner2 .ghonta::before {
+    content: '';
+    width: 30px;
+    height: 116px;
+    background-image: url(./img/min.png);
+    position: absolute;
+    background-size: 26px;
+    background-repeat: no-repeat;
+}
+
+
+.section-center {
+    display: flex;
+    justify-content: center;
+}
+
+/* calculator */
+@font-face {
+    font-family: calculator;
+    src: url(./digital-7/digital-7.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* calculator */
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
+
+a {
+    color: #263238;
+    text-decoration: none;
+}
+
+p {
+    margin: 5px 0 0 0;
+}
+
+.calcWrapper {
+    display: block;
+    border-radius: 6px;
+    position: relative;
+    width: 348px;
+    margin: 0 auto;
+    padding: 44px 24px;
+    background: #E6E1DA;
+    box-shadow: 0 8px 10px -4px rgba(0, 0, 0, 0.5), 0 40px 50px -15px rgba(0, 0, 0, 0.2), inset 0 -2px 8px 1px rgba(204, 194, 181, 1), 0px 2px 1px 0px rgba(255, 255, 255, 0.8) inset;
+}
+
+.screenBase {
+    padding: 4px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    background: background: -moz-linear-gradient(top, rgba(65, 65, 62, 0.5) 0%, rgba(255, 255, 255, 1) 100%);
+    background: -webkit-linear-gradient(top, rgba(65, 65, 62, 0.5) 0%, rgba(255, 255, 255, 1) 100%);
+    background: linear-gradient(to bottom, rgba(65, 65, 62, 0.5) 0%, rgba(255, 255, 255, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#8041413e', endColorstr='#ffffff', GradientType=0);
+}
+
+.screen {
+    font-family: 'VT323', monospace;
+    border-radius: 2px;
+    font-size: 45px;
+    text-align: right;
+    height: 90px;
+    color: rgba(0, 0, 0, 0.7);
+    text-shadow: 0 4px rgba(0, 0, 0, 0.1);
+    background: #c6c5ad;
+    line-height: 45px;
+    padding: 4px 10px 10px 0;
+    box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.5), inset 0 2px 12px 0 rgba(0, 0, 0, 0.4), 0 0 0 2px rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+    font-family: calculator;
+}
+
+.buttons {
+    position: relative;
+    margin: 0 0 0 -10px;
+    padding: 0;
+}
+
+.buttons>button {
+    border-radius: 4px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    box-sizing: border-box;
+    position: relative;
+    display: inline-block;
+    width: 64px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    height: 50px;
+    color: #6f6243;
+    text-shadow: 0 1px 0 #ffffff, 0 -1px rgba(0, 0, 0, 0.2);
+    font-size: 20px;
+    line-height: 25px;
+    box-sizing: border-box;
+    background: #efebe5;
+    margin-top: 20px;
+    margin-left: 10px;
+    box-shadow: inset 0 1px 0 0 #ffffff, inset 0 -3px 1px 0 rgba(93, 80, 51, 0.3), inset 0 -5px 10px 2px rgba(204, 196, 178, 0.8), inset 0 4px 6px 0 rgba(255, 255, 255, 0.8), 0 -1px 0px 2px #CCC4B2, 0 1px 0px 2px rgba(255, 255, 255, 0.7);
+}
+
+.buttons>button:after {
+    content: '';
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);
+    position: absolute;
+    display: block;
+    top: 48px;
+    overflow: hidden;
+    opacity: 0.4;
+    box-shadow: inset 0 20px 8px -10px rgba(93, 80, 51, 0.6);
+    right: -1px;
+    left: -1px;
+    height: 20px;
+    background: transparent;
+}
+
+.buttons>button:focus {
+    outline: 0;
+}
+
+.buttons>button.ac-ce {
+    background: #61655B;
+    color: #ffffff;
+    text-shadow: 0 1px rgba(255, 255, 255, 0.2), 0 -1px rgba(0, 0, 0, 0.8);
+    box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.3), inset 0 -3px 1px 0 rgba(0, 0, 0, 0.3), inset 0 -5px 10px 2px rgba(0, 0, 0, 0.3), inset 0 4px 6px 0 rgba(255, 255, 255, 0.1), 0 -1px 0px 2px #CCC4B2, 0 1px 0px 2px rgba(255, 255, 255, 0.7);
+}
+
+.buttons>button.zero {
+    width: 142px;
+}
+
+.buttons>button.hidden {
+    display: none;
+}
+
+.buttons>button.equal {
+    bottom: 0;
+    right: 0;
+    color: #ffffff;
+    text-shadow: 0 1px rgba(255, 255, 255, 0.2), 0 -1px rgba(164, 27, 21, 0.8);
+    background: #FA4C07;
+    box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.3), inset 0 -3px 1px 0 rgba(164, 27, 21, 1), inset 0 -5px 10px 2px rgba(164, 27, 21, 0.5), inset 0 4px 6px 0 rgba(255, 255, 255, 0.1), 0 -1px 0px 2px #CCC4B2, 0 1px 0px 2px rgba(255, 255, 255, 0.7);
+    position: absolute;
+    height: 120px;
+}
+
+.buttons>button.equal:after {
+    top: 116px;
+}
+
+.buttons>button:active {
+    box-shadow: inset 0 3px 5px 0 rgba(93, 80, 51, 0.4), inset 0 5px 10px 2px rgba(204, 196, 178, 0.8), inset 0 4px 6px 0 rgba(255, 255, 255, 0.8), 0 -1px 0px 2px #CCC4B2, 0 1px 0px 2px rgba(255, 255, 255, 0.7);
+}
+
+.buttons>button.ac-ce:active {
+    box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.4), inset 0 5px 10px 2px rgba(0, 0, 0, 0.2), 0 -1px 0px 2px #CCC4B2, 0 1px 0px 2px rgba(255, 255, 255, 0.7);
+}
+
+.buttons>button.equal:active {
+    box-shadow: inset 0 3px 5px 0 rgba(164, 27, 21, 1), inset 0 5px 10px 2px rgba(164, 27, 21, 0.5), 0 -1px 0px 2px #CCC4B2, 0 1px 0px 2px rgba(255, 255, 255, 0.7);
+}
+
+.buttons>button:active:after {
+    display: none;
+}
